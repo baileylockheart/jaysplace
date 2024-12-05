@@ -1,0 +1,203 @@
+<style>
+#sidebarcontainer{
+  /*look*/
+  background-color: var(--orange);
+  border: solid black 2px;
+  border-radius: 15px;
+  /*text*/
+  text-align:center;
+  line-height:.95;
+  font-weight:400;
+  /*placement*/
+  position:relative;
+  float:left;
+  width:235px;
+  padding:0 15px;
+  margin-right:10px;
+  }
+#sidebartext{
+  font-family:"Dongle",sans-serif;
+  font-size:1.75rem;
+  font-weight:450
+  }
+.spotifysidebar{
+  background-color: var(--lightyellow);
+  border: 3px dashed black;
+  border-radius: 10px;
+  margin-top:-25px;
+  line-height:20px;
+  overflow:hidden
+  }
+textarea{
+  background-color:var(--lightyellow);
+  background-repeat:no-repeat;
+  border: 3px dashed #000;
+  font-weight:bold;
+  font-family:Dongle, sans-serif;
+  font-size:15px;
+  }
+</style>
+<div id="sidebarcontainer">
+  <p id="sidebartext"><a href="/index.html" target="_top"><img src="/images/logo.png" width="216.8px" height="100.8" style="margin-left:-20px;"alt="Jay's Place"></a>
+      <br>~<br>
+      <b>Me:</b>
+      <br><a id='color' href="/about.html" target="_parent">About Me</a> • 
+      <a id='color' href="/blog.html" target="_parent">Blog</a> • 
+      <a id='color' href="/microblog.html" target="_parent">Microblog</a> • 
+      <a id='color' href="/shrines.html" target="_parent">Shrines</a> • 
+      <a id='color' href="/stuff.html" target="_parent">My Stuff</a> •
+      <br>~<br>
+      <b>Site:</b>
+      <br><a id='color' href="/todo.html" target="_parent">To-Do List</a> • 
+      <a id='color' href="/links.html" target="_parent">Links</a> • 
+      <a id='color' href="/graphics.html" target="_parent">Graphics</a> • 
+      <a id='color' href="/sitemap.html" target="_parent">Sitemap</a> •
+      <a id='color' href="https://neocities.org/site/jaysplace" target="_parent">Follow</a> • 
+      <br>~<br>
+
+      <div class="spotifysidebar" style="overflow-x: hidden;">
+          <table
+    id="player"
+  >
+    <tr height="40px">
+      <td width="10px">
+        <img
+          id="player-album-art"
+          style="
+          position:relative;
+          margin-left:5px;
+          margin-top:5px;
+          margin-right:5px;
+          margin-bottom:2px;
+          max-height:90px;
+          border-radius:10px;
+          box-shadow: 2px 2px #4c473c;"
+        />
+      </td>
+      <td width="15px">
+        <div style="margin-top: 10px;width:180px;text-align:left;">
+          <span id="player-song" style="font-size: 20px;margin-right:10px;overflow-x:hidden;"></span><br>
+          <span id="player-artist"style="font-size: 18px;"></span>
+        </div>
+      
+            <div
+              id="player-progress"
+              style="
+                background-color: var(--deepyellow);
+                box-shadow: 2px 2px var(--orange);
+                border: 0.1em solid transparent;
+                height: 10px;
+                max-width: 70px;
+                border-radius: 4px;
+                transition: width 5;
+              "
+            ></div>
+          <div style="
+          font-size: 9px;
+          margin-top:5px;
+          text-align:left;
+          ">
+            <sub><sup><sub>&#128126;</sub></sup></sub>
+            <a id='color02' href="https://github.com/Naushikha/Spotify-Widget" target="_blank">Spotify-Widget</a>
+            by
+            <a id='color02' href="https://naushikha.com" target="_blank">Naushikha</a> <sub><sup><sub>&#128128;</sub></sup></sub>
+          </div>
+          <img src="/images/icon.png" style="position:relative;width:85px;height:90px;margin-left:120px;margin-top:-580px;">
+        </div>
+      </td>
+    </tr>
+  </table>
+  
+  <script>
+    var serviceHost = "https://spotify.whyisfunstuffrestricted9058.workers.dev.";
+    var spotifyUser = "Jay";
+  
+    var songData, progressSeconds, totalSeconds, progressInterval;
+  
+    function updatePlayer() {
+      fetch(`${serviceHost}/get-now-playing`)
+        .then((response) => response.json())
+        .then((data) => {
+          if (data.hasOwnProperty("ERROR")) {
+            document.getElementById(
+              "player-song"
+            ).innerHTML = `${spotifyUser} isn't listening.`;
+            document.getElementById("player-artist").innerHTML = "  ";
+            return;
+          }
+          songData = data;
+          document.getElementById("player-song").innerHTML = data.item.name;
+          document.getElementById("player-artist").innerHTML =
+            data.item.artists[0].name;
+          document
+            .getElementById("player-album-art")
+            .setAttribute("src", data.item.album.images[1].url);
+          document
+            .getElementById("player-progress")
+            .setAttribute(
+              "style",
+              document.getElementById("player-progress").getAttribute("style") +
+                `width: ${(data.progress_ms * 100) / data.item.duration_ms}%`
+            );
+  
+  
+          // Set the links to spotify stuff
+          
+  
+          // Timer to show updates on progress bar and time
+          // https://stackoverflow.com/questions/5517597/plain-count-up-timer-in-javascript
+          progressSeconds = Math.ceil(songData.progress_ms / 1000);
+          totalSeconds = Math.ceil(songData.item.duration_ms / 1000);
+          // Process progress only if a song is in 'playing' state
+          if (songData.is_playing) {
+            progressInterval = setInterval(setProgress, 1000);
+          } else {
+            setProgress();
+          }
+  
+         
+        });
+    }
+  
+    function setProgress() {
+      if (progressSeconds > totalSeconds) {
+        clearInterval(progressInterval);
+        updatePlayer();
+        return;
+      }
+      ++progressSeconds;
+      var totalLabel =
+        pad(parseInt(totalSeconds / 60)) + ":" + pad(totalSeconds % 60);
+      var progressLabel =
+        pad(parseInt(progressSeconds / 60)) + ":" + pad(progressSeconds % 60);
+      document.getElementById("player-progress").style.width = `${
+        (progressSeconds * 70) / totalSeconds
+      }%`;
+    }
+  
+    function pad(val) {
+      var valString = val + "";
+      if (valString.length < 2) {
+        return "0" + valString;
+      } else {
+        return valString;
+      }
+    }
+  
+    // Load player for the first time
+    updatePlayer();
+  </script>
+      </div>~
+      <div style="margin-top:-25px;">
+          <p id="sidebartext"><sup>My Button! </sup><img alt="jay's place button" src="/images/jaysplace.png" style="float:right;border:1px solid black;margin-right:40px;margin-bottom:5px;"/></p>
+          </div>
+          <div style="margin-top:-25px;">
+          <textarea cols="21" rows="3" class="textarea"><a href="http://jaysplace.neocities.org" target="_blank"><img src="https://64.media.tumblr.com/44cd71b24645c1fbbc92f857852d1efa/58ff2167099a2b4b-90/s100x200/8743aeb24f3d8de2b784786d9e42eafadfe37b41.png"/></a></textarea></form>
+          </p>
+      </div>
+      <p>
+          <img src="/images/buttons/neocities.png">
+          <img src="/images/buttons/bestviewed.gif">
+          <img src="/images/buttons/firefox4.gif">
+      </p>
+</div>

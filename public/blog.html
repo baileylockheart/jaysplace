@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<head>
+    <title>Jay's Place: Microblog</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="color-scheme" content="light only"/>
+    <meta name="theme-color" content="#FFDC85">
+
+    <!--hehe meta-->
+    <meta name="description" content="Tiny Twitter!"/>
+    <meta property="og:site_name" content="Jay's Place: Microblog"/>
+    <meta property="og:title" content="Jay's Place: Microblog"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:description" content="Tiny Twitter!"/>
+    <meta property="og:image" content="https://i.imgur.com/Pc9jl4N.png"/>
+    <meta property="og:image:height" content="800"/>
+    <meta property="og:url" content="https://jaysplace.neocities.org/microblog"/>
+
+    <!--funnily enough, twitter :')-->
+    <meta name="twitter:title" content="Jay's Place: Microblog"/>
+    <meta name="twitter:image" content="https://i.imgur.com/Pc9jl4N.png">
+    <meta name="twitter:description" content="Tiny Twitter!">
+    <meta property="twitter:card" content="summary_large_image"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dongle&display=swap" rel="stylesheet">
+
+   
+    <link rel="canonical" href="https://jaysplace.neocities.org/microblog"/>
+    <link rel="icon" type="image/x-icon" href="/images/icon.png">
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+    <!--sidebar thingy-->
+    <script type="text/javascript">
+        $(function(){
+        $("#sidebar-placeholder").load("/sidebar.html");
+     });
+        $(function(){
+        $("#blognavbar-placeholder").load("/blognavbar.html");
+     });
+    </script>  
+    <div id="preloader"></div>
+</head>
+<body>  
+    <div id="blognavbar-placeholder" class="sidebar"></div>
+    <div id="sidebar-placeholder" class="sidebar"></div>
+<div id="shortyellowheader">
+    <h1>BLOG:</h1>
+</div>
+<div id="shortlightyellow">
+    <p style="font-size: 2rem;line-height: 1.1;">
+        <b>Welcome to my blog!</b><br><sup>Thanks for taking a look :D I hope you enjoy your time here!</sup>
+        <br>~<br>
+        <b>Recent Posts:</b><br>
+        <a id="color02" href="/blog/7-21-2023 ~ School Chromebook.html" target="_parent">7-21-2023 ~ School Chromebook</a><br>
+        <a id="color02" href="/blog/5-1-2023 ~ Blinkies!!.html" target="_parent">5-1-2023 ~ Blinkies!!</a><br>
+        <a id="color02" href="/blog/4-17-2023 ~ Webmaster 0-0.html" target="_parent">4-17-2023 ~ Webmaster 0-0</a>
+    </p>    
+</div>
+
+<div style="position:absolute;top:740px;">&nbsp;&nbsp;</div>
+    <script>
+        var loader = document.getElementById("preloader");
+        window.addEventListener("load", function () {
+          loader.style.display = "none";
+        });
+    </script>
+</body>
+</html>
