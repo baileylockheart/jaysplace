@@ -204,6 +204,11 @@ textarea {
   overflow-y: auto;
 }
 
+#pixels {
+  display: flex;
+  margin: 5px;
+}
+
 ::-moz-selection {
   background: #b3a5c0;
   color: #21282e;
@@ -233,6 +238,14 @@ marquee {
 #imghover img:hover {
   transition: all 0.2s ease-out;
   transform: scale(1.1);
+}
+
+.static {
+  position: absolute;
+}
+
+.static:hover {
+  opacity: 0;
 }
 
 #preloader {
@@ -292,7 +305,7 @@ marquee {
     margin: 5px auto;
   }
   .scrollbox {
-    width: 100%;
+    width: 90%;
     height: -moz-max-content;
     height: max-content;
     margin-bottom: 1rem;
@@ -300,60 +313,10 @@ marquee {
   .scrollbox p {
     text-align: center;
   }
-  .btnbox {
-    margin: 0 auto;
-  }
-}
-@media (max-width: 768px) {
-  html {
-    font-size: 17px;
-  }
-  #container {
-    margin-left: 1rem;
-    margin-right: 2.75rem;
-  }
-  #lr, #main {
-    display: block;
-    width: 100%;
-  }
-  #lr {
+  #pixels {
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  #pfp {
-    margin: 0;
-  }
-  h3 {
-    text-align: center;
-  }
-  textarea {
-    height: 1.5rem;
-  }
-  #nav {
-    width: 100%;
-    margin: 5px 0 5px;
-  }
-  #nav #links {
-    display: inline-flex;
-  }
-  #nav li {
-    font-size: 1.25rem;
-    line-height: 1.1rem;
-    padding: 0px 0.5rem;
-  }
-  .callout {
-    width: 90%;
+    justify-content: center;
     margin: 5px auto;
-  }
-  .scrollbox {
-    width: 90%;
-    height: -moz-max-content;
-    height: max-content;
-    margin-bottom: 1rem;
-  }
-  .scrollbox p {
-    text-align: center;
   }
   .btnbox {
     margin: 0 auto;
