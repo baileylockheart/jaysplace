@@ -235,10 +235,6 @@ marquee {
   transform: scale(1.1);
 }
 
-.btnbox {
-  width: 190px;
-}
-
 #preloader {
   align-items: center;
   justify-content: center;
@@ -351,7 +347,7 @@ marquee {
     margin: 5px auto;
   }
   .scrollbox {
-    width: 100%;
+    width: 90%;
     height: -moz-max-content;
     height: max-content;
     margin-bottom: 1rem;
@@ -361,5 +357,6 @@ marquee {
   }
   .btnbox {
     margin: 0 auto;
+    width: 190px;
   }
 }/*# sourceMappingURL=style.css.map */
