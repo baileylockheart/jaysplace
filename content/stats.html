@@ -1,0 +1,66 @@
+---
+layout: template.njk
+title: Stats
+description: My current everything!
+name: stats
+---
+<style>
+#statuscafe {
+    padding: .5em;
+    background-color: var(--altbg);
+    border: 1px solid var(--borders);
+}
+#statuscafe-username {
+    margin-bottom: .5em;
+}
+#statuscafe-content {
+    margin: 0 1em 0.5em 1em;
+}
+.callout h2{line-height: 0.5rem;}
+@media (max-width: 768px){
+.callout{margin: 5px auto;width:90%}
+}
+</style>
+<div id="content">
+    <h1>My current everything!</h1>
+    <div id="lr">
+        <div>
+            <div class="callout">
+                <h2>Status:</h2>
+                <div id="statuscafe">
+                    <div id="statuscafe-username"></div>
+                    <div id="statuscafe-content"></div>
+                </div><script src="https://status.cafe/current-status.js?name=jaysplace" defer></script>
+            </div>
+            <div class="callout">
+                <h2>Listening To:</h2>
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/3IGZmUJql41Q2FSIBweSsz?utm_source=generator" width="300" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+            <div class="callout">
+                <h2>Mood:
+                <img src="https://moods.imood.com/display/uname-lockheartlove/fg-FFFFFF/bg-0065a8/imood.gif" alt="My current mood at www.imood.com" border="0" width="110" style="background-color:#0065a8;padding:2px;margin-bottom:-6px;border:solid 2px var(--borders)"></h2>
+            </div>
+            <div class="callout">
+                <h2>Sharing:</h2>
+                <iframe width="300" scrolling="no" src="https://www.youtube.com/embed/uNlZ50b6wSs" frameborder="0"></iframe>
+            
+            </div>
+        </div>
+        <div>
+            <div class="callout">
+                <h2>Hyperfixation:</h2>
+                <h2>Web development</h2>
+            </div>
+            <div class="callout">
+                <h2>Watching:</h2>
+                <img src="/images/watching.png" width="300">
+                <p>Season 1, specifically</p>
+            </div>
+            
+            <div class="callout">
+                <h2>Meme:</h2>
+                <img src="/images/meme.png" border="0" width="300">
+            </div>
+        </div>
+    </div>
+</div>

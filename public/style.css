@@ -87,6 +87,11 @@ main {
 #nav a {
   font-size: 1.15rem;
 }
+#nav li {
+  text-align: center;
+  list-style: none;
+  line-height: 1.6rem;
+}
 #nav p {
   text-align: center;
 }
@@ -155,7 +160,10 @@ footer a {
   margin: 5px 0px 5px;
   border: 2px solid #b3a5c0;
   padding: 1rem;
-  width: 90%;
+  margin: 5px 2px;
+  width: 300px;
+  height: -moz-min-content;
+  height: min-content;
 }
 
 /*Text*/
@@ -185,7 +193,7 @@ textarea {
   font-family: "Binchotan", sans;
   font-size: 0.7rem;
   padding: 2px;
-  height: 3rem;
+  height: 2rem;
 }
 
 /*Extras*/
@@ -227,6 +235,10 @@ marquee {
   transform: scale(1.1);
 }
 
+.btnbox {
+  width: 190px;
+}
+
 #preloader {
   align-items: center;
   justify-content: center;
@@ -240,7 +252,7 @@ marquee {
   z-index: 9999;
 }
 
-/*media querey*/
+/*Media Querey*/
 @media (max-width: 768px) {
   html {
     font-size: 17px;
@@ -271,9 +283,17 @@ marquee {
     width: 100%;
     margin: 5px 0 5px;
   }
-  #nav p {
+  #nav #links {
+    display: inline-flex;
+  }
+  #nav li {
     font-size: 1.25rem;
     line-height: 1.1rem;
+    padding: 0px 0.5rem;
+  }
+  .callout {
+    width: 90%;
+    margin: 5px auto;
   }
   .scrollbox {
     width: 100%;
@@ -283,5 +303,63 @@ marquee {
   }
   .scrollbox p {
     text-align: center;
+  }
+  .btnbox {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 768px) {
+  html {
+    font-size: 17px;
+  }
+  #container {
+    margin-left: 1rem;
+    margin-right: 2.75rem;
+  }
+  #lr, #main {
+    display: block;
+    width: 100%;
+  }
+  #lr {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #pfp {
+    margin: 0;
+  }
+  h3 {
+    text-align: center;
+  }
+  textarea {
+    height: 1.5rem;
+  }
+  #nav {
+    width: 100%;
+    margin: 5px 0 5px;
+  }
+  #nav #links {
+    display: inline-flex;
+  }
+  #nav li {
+    font-size: 1.25rem;
+    line-height: 1.1rem;
+    padding: 0px 0.5rem;
+  }
+  .callout {
+    width: 90%;
+    margin: 5px auto;
+  }
+  .scrollbox {
+    width: 100%;
+    height: -moz-max-content;
+    height: max-content;
+    margin-bottom: 1rem;
+  }
+  .scrollbox p {
+    text-align: center;
+  }
+  .btnbox {
+    margin: 0 auto;
   }
 }/*# sourceMappingURL=style.css.map */
