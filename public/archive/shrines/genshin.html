@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<head>
+    <title>Jay's Place: Genshin Impact</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="color-scheme" content="light only"/>
+    <meta name="theme-color" content="#99C2E4">
+
+    <!--hehe meta-->
+    <meta name="description" content="Hello and welcome to my first shrine, for the game Genshin Impact!"/>
+    <meta property="og:site_name" content="Jay's Place: Genshin Impact"/>
+    <meta property="og:title" content="Jay's Place: Genshin Impact"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:description" content="Hello and welcome to my first shrine, for the game Genshin Impact!"/>
+    <meta property="og:image" content="https://i.imgur.com/BrqIaow.png"/>
+    <meta property="og:image:height" content="800"/>
+    <meta property="og:url" content="https://jaysplace.neocities.org/shrines/genshin"/>
+
+    <!--also twitter :')-->
+    <meta name="twitter:title" content="Jay's Place: Genshin Impact"/>
+    <meta name="twitter:image" content="https://i.imgur.com/BrqIaow.png">
+    <meta name="twitter:description" content="Hello and welcome to my first shrine, for the game Genshin Impact!">
+    <meta property="twitter:card" content="summary_large_image"/>
+    <link rel="icon" type="image/x-icon" href="/archive/images/shrines/genshin-impact-logo.png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Signika&display=swap');
+        body:before{
+            background-attachment: scroll;
+            content: '';
+            display: block;
+            position: fixed;
+            pointer-events: none;
+            width:100vw;
+            height:100vh;
+            left:0;
+            top:0;
+            transform: scale(1);
+            z-index: -700;
+            background-image: url(/archive/images/shrines/genshin.png);
+            background-size: cover, auto;
+            background-position: center, 0% 0%;
+            background-repeat: no-repeat, repeat;
+            }
+        body{
+            font-family: "Signika",sans-serif;
+            color: #3F5B82;
+            font-size:1rem;
+            line-height:normal;
+            font-weight:500;
+            }
+        #mainheader {
+            display:flex;
+            text-align:center;
+            position:relative;
+            border-radius:5px;
+            margin-left:225px;
+            margin-top: 0px;
+            margin-bottom: 5px;
+            padding:0 20px 0 20px;
+            align-items:center;
+            justify-content:center;
+            background-color:#C7A678;
+            border:2px solid #000;
+            color:#000;
+            font-family:"Signika", sans-serif;
+            font-size:1.5rem;
+            line-height:0.95;
+            font-weight:400;
+            width:755px;
+            height:80px
+            }
+        #mainbody {
+            display:flex;
+            text-align:left;
+            position:relative;
+            border-radius:5px;
+            margin-bottom:5px;
+            margin-left:225px;
+            padding:0 30px 0 30px;
+            align-items:center;
+            justify-content:center;
+            background-color:#F2D39F;
+            border:2px solid #000;
+            color:#000;
+            font-family:"Signika", sans-serif;
+            font-size:1.75rem;
+            line-height:0.85;
+            font-weight:400;
+            width:735px;
+            height:410px;
+            }
+        #sidebar-right{
+            text-align:center;
+            float:right;
+            margin-left:1029px;
+            position:absolute;
+            border-radius:5px;
+            top:10px;
+            padding:0 20px 0 20px;
+            margin-bottom:20px;
+            align-items:center;
+            justify-content:center;
+            background-color:#D8B072;
+            border:2px solid #000;
+            color:#000;
+            font-family:"Signika",sans-serif;
+            font-size:1.2rem;
+            line-height:1;
+            font-weight:400;
+            width:175px;
+            min-height:80px;
+            height:auto
+            }
+        #sidebar-left{
+            text-align:center;
+            float:left;
+            margin-right:1029px;
+            position:absolute;
+            border-radius:5px;
+            top:10px;
+            padding:0 20px 0 20px;
+            margin-bottom:20px;
+            align-items:center;
+            justify-content:center;
+            background-color:#D8B072;
+            border:2px solid #000;
+            color:#000;
+            font-family:"Signika",sans-serif;
+            font-size:1.2rem;
+            line-height:1;
+            font-weight:400;
+            width:175px;
+            min-height:80px;
+            height:auto
+            }
+        /*text*/
+        h1{
+            color:#000;
+            font-family:"Signika",sans-serif;
+            font-size:3.5rem;
+            line-height:.1;
+            font-weight:475
+            }
+        #text01{
+            color:#000;
+            font-family:"Signika",sans-serif;
+            font-size:1.45rem;
+            line-height:1.45;
+            font-weight:450
+            }
+        #text02{
+            color:#000;
+            font-family:"Signika",sans-serif;
+            font-size:1.25rem;
+            line-height:1.45;
+            font-weight:450
+            }
+        .stroke-text{
+        color:blanchedalmond;
+        text-shadow:2px 0 0 black,0 2px 0 black,-2px 0 0 black,0 -2px 0 black;
+        }
+            
+            
+        /*making things fit*/
+        a{
+        font-size:inherit;
+        color:inherit;
+        }
+
+        #color:hover{
+            transition:color .6s;
+            color:#ffe5b9;
+            }
+        iframe{
+            border:0;
+            width:100%
+            }
+        .textarea{
+            background-color:#F2D39F;
+            background-repeat:no-repeat;
+            border: 2px solid #000;
+            color:#000;
+            font-weight:bold;
+            font-family:"Signika", monospace;
+            font-size:10px;
+            }
+
+        .spotifysidebar{
+            background-color: #F2D39F;
+            border: 2px solid black;
+            border-radius: 5px;
+            margin-top:-20px;
+            line-height:20px;
+            overflow:hidden
+            }
+
+        /*image slideshow thingy*/
+        .slider {
+            width: 735px;
+            height: 360px;
+            background-color: #F2D39F;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 0px;
+            text-align: center;
+            overflow: hidden;
+            }
+        .image-container {
+            width: 4220px;
+            background-color: #F2D39F;
+            height: 304px;
+            top:50px;
+            clear: both;
+            position: relative;
+            -webkit-transition: left 1s;
+            -moz-transition: left 1s;
+            -o-transition: left 1s;
+            transition: left 1s;
+            }
+        .slide {
+            float: left;
+            margin: 0px;
+            padding: 0px;
+            position: relative;
+            }
+        #slide-1:target ~ .image-container {
+            left: 0px;
+            }
+        #slide-2:target ~ .image-container {
+            left: -735px;
+            }
+        #slide-3:target ~ .image-container {
+            left: -1470px;
+            }
+        .buttons {
+            position: relative;
+            }
+        .buttons a {
+            display: inline-block;
+            height: 15px;
+            width: 15px;
+            border-radius: 50px;
+            background-color: white;
+            }
+
+        /* Preloader */
+        #preloader {
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            display: flex;
+            position: fixed;
+            height: 100vh;
+            left: 0;
+            top: 0;
+            background: #fff
+            url("https://yuanshen.site/imgs/loading-bar.png")
+            no-repeat center;
+            z-index: 9999;
+        }
+        </style>
+<div id="preloader"></div> 
+</head>
+<body>
+    <div id="sidebar-left">
+        <p id="text02"><a href="/archive/index.html" target="_top"><img src="/archive/images/logo.png" width="216.8px" height="100.8" style="margin-left:-20px;"alt="Jay's Place"></a>
+            <br>~<br>
+            <b>Me:</b>
+            <br><a id='color' href="/archive/about.html" target="_parent">About Me</a> • 
+            <a id='color' href="/archive/blog.html" target="_parent">Blog</a><br> • 
+            <a id='color' href="/archive/microblog.html" target="_parent">Microblog</a> • <br>
+            <a id='color' href="/archive/shrines.html" target="_parent">Shrines</a> • 
+            <a id='color' href="/archive/stuff.html" target="_parent">My Stuff</a>
+            <br>~<br>
+            <b>Site:</b>
+            <br><a id='color' href="/archive/todo.html" target="_parent">To-Do List</a> • 
+            <a id='color' href="/archive/links.html" target="_parent">Links</a><br> • 
+            <a id='color' href="/archive/graphics.html" target="_parent">Graphics</a> • <br> • 
+            <a id='color' href="https://neocities.org/site/jaysplace" target="_parent">Follow</a> • 
+            <br>~<br>
+            <div class="spotifysidebar" style="overflow-x: hidden;">
+                <table
+          id="player"
+        >
+          <tr height="40px">
+            <td width="10px">
+              <img
+                id="player-album-art"
+                style="
+                position:relative;
+                margin-left:5px;
+                margin-top:5px;
+                margin-right:5px;
+                margin-bottom:2px;
+                max-height:60px;
+                border-radius:10px;
+                box-shadow: 2px 2px #4c473c;"
+              />
+            </td>
+            <td width="15px">
+              <div style="margin-top: 1px;width:180px;text-align:left;">
+                <span id="player-song" style="font-size: 12px;margin-right:10px;overflow-x:hidden;"></span><br>
+                <span id="player-artist"style="font-size: 10px;"></span>
+              </div>
+            
+                  <div
+                    id="player-progress"
+                    style="
+                      background-color: #ffefd2;
+                      box-shadow: 2px 2px #c2a067;
+                      border: 0.1em solid transparent;
+                      height: 10px;
+                      max-width: 70px;
+                      border-radius: 4px;
+                      transition: width 5;
+                    "
+                  ></div>
+                <div style="
+                font-size: 5px;
+                margin-top:5px;
+                text-align:left;
+                ">
+                  &#128126;
+                  <a id='color02' href="https://github.com/Naushikha/Spotify-Widget" target="_blank">Spotify-Widget</a>
+                  by
+                  <a id='color02' href="https://naushikha.com" target="_blank">Naushikha</a> &#128128;
+                </div>
+                <img src="/archive/images/icon.png" style="position:relative;width:100px;height:110px;margin-left:150px;margin-top:-500px;">
+              </div>
+            </td>
+          </tr>
+        </table>
+        
+        <script>
+          var serviceHost = "https://spotify.whyisfunstuffrestricted9058.workers.dev.";
+          var spotifyUser = "Jay";
+        
+          var songData, progressSeconds, totalSeconds, progressInterval;
+        
+          function updatePlayer() {
+            fetch(`${serviceHost}/get-now-playing`)
+              .then((response) => response.json())
+              .then((data) => {
+                if (data.hasOwnProperty("ERROR")) {
+                  document.getElementById(
+                    "player-song"
+                  ).innerHTML = `${spotifyUser} isn't listening.`;
+                  document.getElementById("player-artist").innerHTML = "  ";
+                  return;
+                }
+                songData = data;
+                document.getElementById("player-song").innerHTML = data.item.name;
+                document.getElementById("player-artist").innerHTML =
+                  data.item.artists[0].name;
+                document
+                  .getElementById("player-album-art")
+                  .setAttribute("src", data.item.album.images[1].url);
+                document
+                  .getElementById("player-progress")
+                  .setAttribute(
+                    "style",
+                    document.getElementById("player-progress").getAttribute("style") +
+                      `width: ${(data.progress_ms * 100) / data.item.duration_ms}%`
+                  );
+        
+        
+                // Set the links to spotify stuff
+                
+        
+                // Timer to show updates on progress bar and time
+                // https://stackoverflow.com/questions/5517597/plain-count-up-timer-in-javascript
+                progressSeconds = Math.ceil(songData.progress_ms / 1000);
+                totalSeconds = Math.ceil(songData.item.duration_ms / 1000);
+                // Process progress only if a song is in 'playing' state
+                if (songData.is_playing) {
+                  progressInterval = setInterval(setProgress, 1000);
+                } else {
+                  setProgress();
+                }
+        
+               
+              });
+          }
+        
+          function setProgress() {
+            if (progressSeconds > totalSeconds) {
+              clearInterval(progressInterval);
+              updatePlayer();
+              return;
+            }
+            ++progressSeconds;
+            var totalLabel =
+              pad(parseInt(totalSeconds / 60)) + ":" + pad(totalSeconds % 60);
+            var progressLabel =
+              pad(parseInt(progressSeconds / 60)) + ":" + pad(progressSeconds % 60);
+            document.getElementById("player-progress").style.width = `${
+              (progressSeconds * 70) / totalSeconds
+            }%`;
+          }
+        
+          function pad(val) {
+            var valString = val + "";
+            if (valString.length < 2) {
+              return "0" + valString;
+            } else {
+              return valString;
+            }
+          }
+        
+          // Load player for the first time
+          updatePlayer();
+        </script>
+            </div>~
+            <div style="margin-top:-25px;">
+                <p id="text01"><sup>My Button! </sup><img alt="jay's place button" src="/archive/images/jaysplace.png" style="float:right;border:1px solid black;margin-right:40px;margin-bottom:5px;"/></p>
+                </div>
+                <div style="margin-top:-25px;">
+                <textarea cols="21" name="TextArea1" rows="3" class="textarea"><a href="http://jaysplace.neocities.org" target="_blank"><img src="https://64.media.tumblr.com/44cd71b24645c1fbbc92f857852d1efa/58ff2167099a2b4b-90/s100x200/8743aeb24f3d8de2b784786d9e42eafadfe37b41.png"/></a></textarea></form>
+                </p>
+            </div>
+            <p>
+                <img src="/archive/images/buttons/neocities.png">
+                <img src="/archive/images/buttons/bestviewed.gif">
+                <img src="/archive/images/buttons/firefox4.gif">
+            </p>
+    </div>
+    <div id="mainheader">
+        <h1>
+            Genshin Impact
+        </h1>
+    </div>
+    
+    <div id="mainbody" style="overflow-y:auto">
+        <p id="text02" style="margin-top:1450px;">
+            <span style="position:absolute;margin-top:20px;">Hello and welcome to my first shrine, for the game Genshin Impact! I'm not sure how this whole shrine thing works, so I'm just gonna talk about what I like about it and how I got into it!</span>
+            <br>
+            <span style="float:left;margin-top:90px;max-width:520px">I first started wanting to play because of this video. Because of it, the first character I ever got attached to was Venti. I was determined to play the game and get him. There were a solid few months where I hadn't been able to play Genshin Impact since my phone was incompatible and the only laptop I had was a Macbook Pro from 2012. So, I got a laptop "for school", and made sure to find an option that could run the game. 
+            <br><br>During that entire waiting period, I'd been knee-deep in content about the game, and especially the character, Venti - as someone who was never particularly into the fantasy genre, I was new to the idea of bards, but I really liked it.</span>
+            <span>
+            <video controls loop width="200px" style="position:absolute;float:right;right:5px;margin-top:90px;">
+            <source src="https://file.garden/ZrZSgsrYfQXsO7QH/videos/Dragonspine%20Tavern%20Song" type="video/mp4">
+            </video></span>
+            <span style="float:left;"><br>Luckily enough, Venti was my first non-standard five star character! I'm a free-to-play player, since I can't really afford to one, spend money on a free game, and two, get used to doing so. This has led to a lot of pain after losing 50/50s, but I know it's for the best.<br><br>
+            I think the funniest (and most painful) example of this was probably when Childe's banner was up, so I spent 120+ wishes that I'd been saving up specifically for him. He was the first character I'd prefarmed a decent number of materials and decent quality of artifacts for, as I didn't know how to do so for Venti. I lost the 50/50 to QiQi, and still didn't get him after that. His banner ended and the Wanderer's came up. I was legitimately upset that I hadn't gotten Childe. I used one of the wishes I'd gotten from the update primos on the Wanderer's banner. I got him on the first wish. <i>The first wish.</i> It was a very bittersweet moment for me.<br><br>
+            Anyway, enough about my confusing luck, more about my thoughts on this game.<br>
+            When I first started, I was kind of just pressing all the buttons that I knew did things, in hopes of doing the right thing. Still, I pick things up quickly and ended up figuring out what I had to do. Now that I understand it, though? I think Genshin has really fun gameplay, really endearing characters, and an interesting story. Plus, the graphics are brilliant in my opinion, and I literally have them on some of the lowest settings in order to ensure my laptop doesn't explode. The game is vibrant and interesting, and overall just really cool.<br><br>
+            If I had to pick the game that first got me into video games, it would be Kingdom Hearts, and if you've played both games, I think it'll be understandable why I like Genshin so much from a gameplay perspective. I'm not one of those gamers with a very in-depth understanding of game mechanics, but I am someone who appreciates large explorable areas and action that doesn't pull you into a seperate screen.<br><br>
+            The world of Teyvat was also really interesting to me from the beginning. I was very confused about how to pronounce it, but that's beside the point. Not only is the world beautiful with many distinct areas, but it's full of life. Lots of games have weak mobs scattered throughout, but I don't think I've seen any games where the NPCs and even enemies have such fleshed-out lives. Between the sleeping hilichurls, the dancing eremites, and the hundreds of little storylines and interactions weaving together all the NPCs. There are world quests that I've done purely because I recognized the NPC by name and liked their personality - that's how detailed this world it. Teyvat is full of life, and I really enjoy getting to explore it.<br><br>
+            Genshin Impact is definitely one of, if not my absolute favorite game as of now. It's a really fun game, and I think it's impacted me as a person, as well - it reignited my interest in many things I'd temporarily left behind, ranging from interesting magic systems to music and even conlangs. It has an interesting world to escape into, and a gacha system to <s>break your heart</s> help you get some of your favorite characters! Also, below this text window, I've got some of my best (albeit not overly impressive) builds!
+        </span>
+        </p></div>
+        
+        <div id="mainbody" style="height:390px;">
+            <div class="slider">
+                <span id="slide-1"></span>
+                <span id="slide-2"></span>
+                <span id="slide-3"></span>
+                <div class="image-container">
+                  <img src="/archive/images/shrines/Scara.png" class="slide" width="735" height="304" />
+                  <img src="/archive/images/shrines/Kaeya.png" class="slide" width="735" height="304" />
+                  <img src="/archive/images/shrines/Venti.png" class="slide" width="735" height="304" />
+                </div>
+                <div class="buttons">
+                  <a href="#slide-1"></a>
+                  <a href="#slide-2"></a>
+                  <a href="#slide-3"></a>
+                </div>
+            </div>
+        </div>
+        <span style="position:absolute;margin-top:-405px;left:265px;width:max-content;font-family:Signika,sans-serif;font-size:1.5rem;line-height:1.45;font-weight:450"><p>These are my strongest characters/best builds. Judge me all you want.</p></span>
+    <div id="sidebar-right">
+        <p>Related Things:<br><br>
+            <a id="color" href="https://genshin.hoyoverse.com/en/" target="_blank">Genshin Impact Official Website!</a><br><br>
+            <a id="color" href="https://act.hoyolab.com/ys/event/signin-sea-v3/index.html?act_id=e202102251931481" target="_blank">Daily Check-In<br>(if you didn't do it!)</a><br><br>
+            <a id="color" href="https://www.maddsbuckley.com/" target="_blank">Madds Buckley, the person in the video!</a><br><br>
+            <a id="color" href="https://genshin.gg/" target="_blank">Genshin.GG, a really extensive guide for characters and teams!</a><br><br>
+            <a id="color" href="https://getonstream.com/best-genshin-impact-settings-for-a-low-end-pc/" target="_blank">How to get Genshin to run smoothly on low-end computers!</a><br><br>~<br>
+        <div id="selfinsertwebring">
+            <script src="/archive/showWebring.js"></script>
+        </div>
+    </p>
+    </div>
+    <script>
+        var loader = document.getElementById("preloader");
+        window.addEventListener("load", function () {
+          loader.style.display = "none";
+        });
+    </script>
+</body>
+</html>

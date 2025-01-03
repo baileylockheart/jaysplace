@@ -1,0 +1,245 @@
+@font-face {
+    font-family: Binchotan;
+    src: url(fonts/Binchotan.ttf);
+  }
+$bg:#21282e;
+$lightbg:#0f4a70;
+$altbg:#0065a8;
+$accent:#cd6529;
+$light:#54bbff;
+$altlight:#ffa068;
+$text:whitesmoke;
+$borders:#b3a5c0;
+$font:"Binchotan", sans;
+
+:root{
+    --bg:#21282e;
+    --lightbg:#0f4a70;
+    --altbg:#0065a8;
+    --accent:#cd6529;
+    --light:#54bbff;
+    --altlight:#ffa068;
+    --text:whitesmoke;
+    --borders:#b3a5c0;
+    --font:"Binchotan", sans;
+}
+html{
+    height:100%;
+    width:100%;
+    font-size: 18px;
+}
+body:before{
+    background-attachment: scroll;
+    content: '';
+    display: block;
+    position: fixed;
+    width:100vw;
+    height:100vh;
+    left:0;
+    top:0;
+    transform: scale(1);
+    z-index: -700;
+    background-image: url(images/orange-swirl-background-free-png.png);
+    background-size: cover;
+    filter: brightness(35%);
+    background-position: center, 0% 0%;
+}
+body{
+    background-color:$bg;
+    font-family: $font;
+    color: $text;
+    font-size:1rem;
+    line-height:normal;
+    font-weight:150;
+}
+body, html {
+    scrollbar-width: auto;
+    scrollbar-color: $altbg $borders;
+}
+#container{
+    display: block;
+    max-width:80%;
+    text-align:center;
+    margin-left:auto;
+    margin-right:auto;
+}
+#lr, #main{
+    display: flex;
+    width: 100%;
+}
+#pfp{
+    margin: 0px 1rem 0px 0px;
+}
+main{
+    display: block;
+    width: 100%;
+}
+/*Navigation*/
+#nav{
+    width:12rem;
+    text-align: center;
+    background-color: $altbg;
+    color:$text;
+    font-size: 1.2rem;
+    margin: 5px 10px 5px 0px;
+    border:2px solid $borders;
+    padding:1rem;
+    a{
+    font-size: 1.15rem;
+    }
+    p{
+        text-align: center;
+    }
+    #pika{
+        max-height: 150px;
+    }
+}
+/*Main content*/
+@mixin boxsets( $contentbg:$bg , $align:start ){
+    width:100%;
+    background-color: $contentbg;
+    color:$text;
+    text-align: $align;
+    margin: 5px 0px 5px;
+    border:2px solid $borders;
+    padding:1rem;
+}
+header{
+    @include boxsets( $contentbg:$accent , $align:center );
+    font-size: 2rem;
+    margin-bottom: 5px;
+    a{
+        text-decoration: none;
+    }
+    a:hover{
+        color:$light
+    }
+}
+footer{
+    @include boxsets( $contentbg:$accent , $align:center );
+    margin: 5px auto;
+    a{
+        text-decoration: none;
+    }
+}
+#content{
+    @include boxsets
+}
+#content2{
+    @include boxsets( $contentbg:$lightbg )
+}
+.callout{
+    @include boxsets( $contentbg:$lightbg );
+    width:90%
+}
+/*Text*/
+p{
+    text-align: start;
+}
+p#tiny{
+    font-size: 0.8rem;
+}
+a {
+    color: whitesmoke;
+    font-size: inherit;
+    text-decoration:underline;
+}  
+a:hover {
+    color: $altlight;
+    transition: 0.6s ease;
+}
+textarea{
+    background-color: $lightbg;
+    color: $borders;
+    border: dashed 3px $borders;
+    font-family: $font;
+    font-size:0.7rem;
+    padding:2px;
+    height:3rem
+}
+/*Extras*/
+.scrollbox{
+    width:18rem;
+    height:18rem;
+    margin: 0px 1rem;
+    overflow-y: auto;
+}
+::selection {
+    background: $borders;
+    color:$bg
+}
+hr{
+    background-color:$borders;
+    border:none;
+    border-radius:5px;
+    height: 2px;
+}
+marquee{
+    background-color: $altbg;
+    padding-top: 4px;
+    margin: 5px -1rem
+}
+#imghover{
+    img{
+    padding-right: 5px;
+    }
+    img:hover{
+    transition: all .2s ease-out;
+    transform: scale(1.1); 
+}
+}
+#preloader {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    background: $bg
+      url("images/oval.svg")
+      no-repeat center;
+    z-index: 9999;
+}
+/*media querey*/
+@media (max-width: 768px){
+    html{
+        font-size:17px
+    }
+    #container{
+        margin-left: 1rem;
+        margin-right: 2.75rem;
+    }
+    #lr, #main{
+        display: block;
+        width: 100%;
+    }
+    #lr{
+        text-align:center;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    #pfp{
+        margin: 0;
+    }
+    h3{
+        text-align: center;
+    }
+    #nav{
+        width: 100%;
+        margin: 5px 0 5px;
+        p{
+            font-size: 1.25rem;
+            line-height: 1.1rem;
+        }
+    }
+    .scrollbox{
+        width:100%;
+        height:max-content;
+        margin-bottom: 1rem;
+        p{
+            text-align: center;
+        }
+    }
+}
