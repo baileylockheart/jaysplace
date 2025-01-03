@@ -294,11 +294,16 @@ marquee {
   }
   #nav #links {
     display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
-  #nav li {
+  #nav #links li {
     font-size: 1.25rem;
-    line-height: 1.1rem;
+    line-height: 1.3rem;
     padding: 0px 0.5rem;
+  }
+  #nav #pikapika {
+    display: none;
   }
   .callout {
     width: 90%;
