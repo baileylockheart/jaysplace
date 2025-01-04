@@ -1,10 +1,37 @@
+<script>
+function abtMe() {
+    document.getElementById("myDropdownMe").classList.toggle("show");
+    }
+function abtSite() {
+    document.getElementById("myDropdownSite").classList.toggle("show");
+    }
+function forYou() {
+    document.getElementById("myDropdownYou").classList.toggle("show");
+    }
+</script>
 <h2>Navigation</h2>
 <div id="links">
-    <li><a href="/about.html">About</a></li>
-    <li><a href="/microblog.html">Microblog</a></li>
-    <li><a href="/graphics.html">Graphics</a></li> 
-    <li><a href="/stats.html">Stats</a></li> 
-    <li><a href="/todo.html">To-do List</a></li> 
+    <div class="dropdown">
+        <a onclick="abtMe()">About Me</a> <small>(3)</small>
+        <div id="myDropdownMe" class="dropdown-content">
+            <li><a href="/about.html">About</a></li> 
+            <li><a href="/microblog.html">Microblog</a></li>
+            <li><a href="/stats.html">Stats</a></li>
+        </div>
+    </div>
+    <div class="dropdown">
+        <a onclick="forYou()">For You</a> <small>(2)</small>
+            <div id="myDropdownYou" class="dropdown-content">       
+            <li><a href="/drawing.html">Drawing Board</a></li>
+            <li><a href="/graphics.html">Graphics</a></li>
+        </div>
+    </div>
+    <div class="dropdown">
+        <a onclick="abtSite()">Sitely</a> <small>(1)</small>
+            <div id="myDropdownSite" class="dropdown-content">
+            <li><a href="/todo.html">To-do List</a></li> 
+        </div>
+    </div>
 </div>
 <hr>
 <iframe src="//incr.easrng.net/badge?key=jaysplace" style="background: url(//incr.easrng.net/bg.gif)" title="increment badge" width="88" height="31" frameborder="0"></iframe>

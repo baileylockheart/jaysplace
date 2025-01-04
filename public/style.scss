@@ -126,12 +126,11 @@ footer{
     padding:1rem;
     a{
         font-size: 1.15rem;
+        line-height: 1.8rem;
     }
     li{
-        text-align: center;
         list-style: none;
-        line-height: 1.6rem;
-        
+        line-height: 1.8rem;
     }
     p{
         text-align: center;
@@ -143,6 +142,22 @@ footer{
 #graphnav{
     @include boxsets( $contentbg:$lightbg );
     text-align: center;
+}
+/*Dropdown*/
+.dropdown {
+    position: relative;
+    display: block;
+}
+.dropdown-content {
+    display: none;
+    text-align: start;
+    position: relative;
+    width: 8rem;
+    margin: 5px;
+    margin-left: 15px;
+}
+.show {
+    display:block;
 }
 /*Text*/
 p{
@@ -258,19 +273,18 @@ marquee{
     #nav{
         width: 100%;
         margin: 5px 0 5px;
-        #links{
-            display:inline-flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            li{
-                font-size: 1.25rem;
-                line-height: 1.3rem;
-                padding: 0px 0.5rem;
-            }
+        li{
+            font-size: 1.25rem;
+            line-height: 1.3rem;
         }
         #pikapika{
             display: none;
         }
+    }
+    .dropdown-content {
+        width: 100%;
+        margin-left: -5px;
+        text-align: center;
     }
     .callout{
         width: 90%;
