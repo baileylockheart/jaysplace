@@ -74,32 +74,6 @@ main{
     display: block;
     width: 100%;
 }
-/*Navigation*/
-#nav{
-    width:12rem;
-    text-align: center;
-    background-color: $altbg;
-    color:$text;
-    font-size: 1.2rem;
-    margin: 5px 10px 5px 0px;
-    border:2px solid $borders;
-    padding:1rem;
-    a{
-        font-size: 1.15rem;
-    }
-    li{
-        text-align: center;
-        list-style: none;
-        line-height: 1.6rem;
-        
-    }
-    p{
-        text-align: center;
-    }
-    #pika{
-        max-height: 150px;
-    }
-}
 /*Main content*/
 @mixin boxsets( $contentbg:$bg , $align:start ){
     width:100%;
@@ -140,6 +114,36 @@ footer{
     width:300px;
     height: min-content;
 }
+/*Navigation*/
+#nav{
+    width:12rem;
+    text-align: center;
+    background-color: $altbg;
+    color:$text;
+    font-size: 1.2rem;
+    margin: 5px 10px 5px 0px;
+    border:2px solid $borders;
+    padding:1rem;
+    a{
+        font-size: 1.15rem;
+    }
+    li{
+        text-align: center;
+        list-style: none;
+        line-height: 1.6rem;
+        
+    }
+    p{
+        text-align: center;
+    }
+    #pika{
+        max-height: 150px;
+    }
+}
+#graphnav{
+    @include boxsets( $contentbg:$lightbg );
+    text-align: center;
+}
 /*Text*/
 p{
     text-align: start;
@@ -179,6 +183,10 @@ textarea{
 ::selection {
     background: $borders;
     color:$bg
+}
+.pic{
+    max-width: 250px;
+    margin: 0px 2px;
 }
 hr{
     background-color:$borders;
@@ -284,5 +292,9 @@ marquee{
     .btnbox{
         margin: 0 auto;
         width:190px;
+    }
+    .pic{
+        display: block;
+        margin: 5px auto
     }
 }

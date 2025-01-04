@@ -73,32 +73,6 @@ main {
   width: 100%;
 }
 
-/*Navigation*/
-#nav {
-  width: 12rem;
-  text-align: center;
-  background-color: #0065a8;
-  color: whitesmoke;
-  font-size: 1.2rem;
-  margin: 5px 10px 5px 0px;
-  border: 2px solid #b3a5c0;
-  padding: 1rem;
-}
-#nav a {
-  font-size: 1.15rem;
-}
-#nav li {
-  text-align: center;
-  list-style: none;
-  line-height: 1.6rem;
-}
-#nav p {
-  text-align: center;
-}
-#nav #pika {
-  max-height: 150px;
-}
-
 /*Main content*/
 header {
   width: 100%;
@@ -166,6 +140,43 @@ footer a {
   height: min-content;
 }
 
+/*Navigation*/
+#nav {
+  width: 12rem;
+  text-align: center;
+  background-color: #0065a8;
+  color: whitesmoke;
+  font-size: 1.2rem;
+  margin: 5px 10px 5px 0px;
+  border: 2px solid #b3a5c0;
+  padding: 1rem;
+}
+#nav a {
+  font-size: 1.15rem;
+}
+#nav li {
+  text-align: center;
+  list-style: none;
+  line-height: 1.6rem;
+}
+#nav p {
+  text-align: center;
+}
+#nav #pika {
+  max-height: 150px;
+}
+
+#graphnav {
+  width: 100%;
+  background-color: #0f4a70;
+  color: whitesmoke;
+  text-align: start;
+  margin: 5px 0px 5px;
+  border: 2px solid #b3a5c0;
+  padding: 1rem;
+  text-align: center;
+}
+
 /*Text*/
 p {
   text-align: start;
@@ -217,6 +228,11 @@ textarea {
 ::selection {
   background: #b3a5c0;
   color: #21282e;
+}
+
+.pic {
+  max-width: 250px;
+  margin: 0px 2px;
 }
 
 hr {
@@ -326,5 +342,9 @@ marquee {
   .btnbox {
     margin: 0 auto;
     width: 190px;
+  }
+  .pic {
+    display: block;
+    margin: 5px auto;
   }
 }/*# sourceMappingURL=style.css.map */
