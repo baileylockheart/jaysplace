@@ -74,6 +74,10 @@ main{
     display: block;
     width: 100%;
 }
+.center{
+    text-align: center;
+    margin: 0 auto
+}
 /*Main content*/
 @mixin boxsets( $contentbg:$bg , $align:start ){
     width:100%;

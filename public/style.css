@@ -73,6 +73,11 @@ main {
   width: 100%;
 }
 
+.center {
+  text-align: center;
+  margin: 0 auto;
+}
+
 /*Main content*/
 header {
   width: 100%;
