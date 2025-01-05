@@ -1,14 +1,4 @@
-<script>
-function abtMe() {
-    document.getElementById("myDropdownMe").classList.toggle("show");
-    }
-function abtSite() {
-    document.getElementById("myDropdownSite").classList.toggle("show");
-    }
-function forYou() {
-    document.getElementById("myDropdownYou").classList.toggle("show");
-    }
-</script>
+<script src="/javascript/nav.js"></script>
 <h2>Navigation</h2>
 <div id="links">
     <div class="dropdown">
@@ -33,6 +23,12 @@ function forYou() {
                 <li><a href="/archive.html">Archive</a></li> 
             <li><a href="/neighbors.html">Neighbors</a></li> 
             <li><a href="/todo.html">To-do List</a></li> 
+        </div>
+    </div>
+    <div class="dropdown">
+        <a onclick="other()">Other</a> <small>(1)</small>
+            <div id="myDropdownOther" class="dropdown-content">
+                <li><a href="/anime.html">Anime List</a></li>
         </div>
     </div>
 </div>
