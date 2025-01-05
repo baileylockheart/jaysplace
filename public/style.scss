@@ -215,6 +215,9 @@ marquee{
     margin: 5px -1rem
 }
 #imghover{
+    display: block;
+    text-align: center;
+    margin: 5px auto;
     img{
     padding-right: 5px;
     }
