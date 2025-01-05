@@ -24,7 +24,27 @@ text-align:center;line-height:0.5rem}
 <div class="awentry">
     <h3>My Hero Academia &star;&star;&star;&star;</h3>
     <img class="awpic" src="https://file.garden/ZrZSgsrYfQXsO7QH/watchlist/bnha.jpg">
-    <p>Need to Restart || S6 E3</p>
+    <p>Haven't Finished || S6 E3</p>
+</div>
+<div class="awentry">
+    <h3>Bungo Stray Dogs &star;&star;&star;&star;</h3>
+    <img class="awpic" src="https://file.garden/ZrZSgsrYfQXsO7QH/watchlist/bsd.jpeg">
+    <p>Haven't Finished || S1 E4</p>
+</div>
+<div class="awentry">
+    <h3>Dungeon Meshi &star;&star;&star;&star;</h3>
+    <img class="awpic" src="https://file.garden/ZrZSgsrYfQXsO7QH/watchlist/dunmeshi.jpg">
+    <p>Haven't Finished || S1 E13</p>
+</div>
+<div class="awentry">
+    <h3>Jujutsu Kaisen &star;&star;&star;&star;</h3>
+    <img class="awpic" src="https://file.garden/ZrZSgsrYfQXsO7QH/watchlist/jjk.jpg">
+    <p>Haven't Finished || S1 E21</p>
+</div>
+<div class="awentry">
+    <h3>Demon Slayer &star;&star;&star;&star;</h3>
+    <img class="awpic" src="https://file.garden/ZrZSgsrYfQXsO7QH/watchlist/demonslayer.jpg">
+    <p>Haven't Finished || S3 E11</p>
 </div>
 <div class="awentry">
     <h3>Haikyuu!! &star;&star;&star;&star;&star;</h3>
@@ -47,34 +67,14 @@ text-align:center;line-height:0.5rem}
     <p>Finished/Caught Up || S2 E8</p>
 </div>
 <div class="awentry">
-    <h3>A Silent Voice &star;&star;&star;</h3>
-    <img class="awpic" src="https://file.garden/ZrZSgsrYfQXsO7QH/watchlist/silentvoice.jpg">
-    <p>Finished Movie</p>
-</div>
-<div class="awentry">
-    <h3>Demon Slayer &star;&star;&star;&star;</h3>
-    <img class="awpic" src="https://file.garden/ZrZSgsrYfQXsO7QH/watchlist/demonslayer.jpg">
-    <p>Haven't Finished || S3 E11</p>
-</div>
-<div class="awentry">
     <h3>Sk8 The Infinity &star;&star;&star;&star;&star;</h3>
     <img class="awpic" src="https://file.garden/ZrZSgsrYfQXsO7QH/watchlist/sk8.jpg">
     <p>Finished/Caught Up || S1 E12</p>
 </div>
 <div class="awentry">
-    <h3>Toradora &star;&star;&star;&star;</h3>
-    <img class="awpic" src="https://file.garden/ZrZSgsrYfQXsO7QH/watchlist/toradora.jpg">
-    <p>Need to Restart</p>
-</div>
-<div class="awentry">
     <h3>If It's for My Daughter... &star;&star;&star;&star;&star;</h3>
     <img class="awpic" src="https://file.garden/ZrZSgsrYfQXsO7QH/watchlist/demonlord.jpeg">
     <p>Finished/Caught Up || S1 E12</p>
-</div>
-<div class="awentry">
-    <h3>Jujutsu Kaisen &star;&star;&star;&star;</h3>
-    <img class="awpic" src="https://file.garden/ZrZSgsrYfQXsO7QH/watchlist/jjk.jpg">
-    <p>Haven't Finished || S1 E21</p>
 </div>
 <div class="awentry">
     <h3>Death Note &star;&star;&star;&star;&star;</h3>
@@ -110,5 +110,95 @@ text-align:center;line-height:0.5rem}
     <h3>WAVE!! -Let's go surfing!!- &star;&star;&star;&star;&star;</h3>
     <img class="awpic" src="https://file.garden/ZrZSgsrYfQXsO7QH/watchlist/wave.jpg">
     <p>Finished/Caught Up || S1 E12</p>
+</div>
+<div class="awentry">
+    <h3>Wotakoi &star;&star;&star;&star;</h3>
+    <img class="awpic" src="https://file.garden/ZrZSgsrYfQXsO7QH/watchlist/wotakoi.jpg">
+    <p>Finished/Caught Up || S1 E11</p>
+</div>
+<div class="awentry">
+    <h3>Sasaki and Miyano &star;&star;&star;&star;&star;</h3>
+    <img class="awpic" src="https://file.garden/ZrZSgsrYfQXsO7QH/watchlist/SasakiandMiyano.jpg">
+    <p>Finished/Caught Up || S1 E12</p>
+</div>
+<div class="awentry">
+    <h3>Spy × Family &star;&star;&star;&star;&star;</h3>
+    <img class="awpic" src="https://file.garden/ZrZSgsrYfQXsO7QH/watchlist/spyfamily.jpg">
+    <p>Finished/Caught Up || S2 E12</p>
+</div>
+<div class="awentry">
+    <h3>My Neighbor Totoro &star;&star;&star;&star;&star;</h3>
+    <img class="awpic" src="https://file.garden/ZrZSgsrYfQXsO7QH/watchlist/totoro.jpg">
+    <p>Finished Movie</p>
+</div>
+<div class="awentry">
+    <h3>A Silent Voice &star;&star;&star;</h3>
+    <img class="awpic" src="https://file.garden/ZrZSgsrYfQXsO7QH/watchlist/silentvoice.jpg">
+    <p>Finished Movie</p>
+</div>
+<div class="awentry">
+    <h3>Chainsaw Man &star;&star;&star;&star;</h3>
+    <img class="awpic" src="https://file.garden/ZrZSgsrYfQXsO7QH/watchlist/chainsawman.jpeg">
+    <p>Need to Restart || S1 E5</p>
+</div>
+<div class="awentry">
+    <h3>Toradora &star;&star;&star;&star;</h3>
+    <img class="awpic" src="https://file.garden/ZrZSgsrYfQXsO7QH/watchlist/toradora.jpg">
+    <p>Need to Restart</p>
+</div>
+<div class="awentry">
+    <h3>Fairy Tail &star;&star;&star;&star;</h3>
+    <img class="awpic" src="https://file.garden/ZrZSgsrYfQXsO7QH/watchlist/fairytail.jpeg">
+    <p>Need to Restart || S2 E?</p>
+</div>
+<div class="awentry">
+    <h3>Attack on Titan &star;&star;&star;&star;&star;</h3>
+    <img class="awpic" src="https://file.garden/ZrZSgsrYfQXsO7QH/watchlist/aot.jpeg">
+    <p>Need to Restart || S3 E?</p>
+</div>
+<div class="awentry">
+    <h3>The Promised Neverland &star;&star;&star;</h3>
+    <img class="awpic" src="https://file.garden/ZrZSgsrYfQXsO7QH/watchlist/tpn.jpeg">
+    <p>Need to Restart || S2 E2</p>
+</div>
+<div class="awentry">
+    <h3>Hunter × Hunter &star;&star;&star;&star;</h3>
+    <img class="awpic" src="https://file.garden/ZrZSgsrYfQXsO7QH/watchlist/hxh.jpeg">
+    <p>Need to Restart</p>
+</div>
+<div class="awentry">
+    <h3>Tsurune &star;&star;&star;&star;</h3>
+    <img class="awpic" src="https://file.garden/ZrZSgsrYfQXsO7QH/watchlist/tsurune.jpeg">
+    <p>Have to Restart</p>
+</div>
+<div class="awentry">
+    <h3>Carole and Tuesday &star;&star;&star;&star;</h3>
+    <img class="awpic" src="https://file.garden/ZrZSgsrYfQXsO7QH/watchlist/carolentuesday.jpg">
+    <p>Need to Restart</p>
+</div>
+<div class="awentry">
+    <h3>Black Clover ???</h3>
+    <img class="awpic" src="https://file.garden/ZrZSgsrYfQXsO7QH/watchlist/blackclover.jpeg">
+    <p>Need to Restart || S1 E2</p>
+</div>
+<div class="awentry">
+    <h3>Kakegurui ???</h3>
+    <img class="awpic" src="https://file.garden/ZrZSgsrYfQXsO7QH/watchlist/kakegurui.jpg">
+    <p>Need to Restart</p>
+</div>
+<div class="awentry">
+    <h3>Your Lie in April ???</h3>
+    <img class="awpic" src="https://file.garden/ZrZSgsrYfQXsO7QH/watchlist/yourlie.jpg">
+    <p>Need to Restart</p>
+</div>
+<div class="awentry">
+    <h3>Beastars ???</h3>
+    <img class="awpic" src="https://file.garden/ZrZSgsrYfQXsO7QH/watchlist/beastars.jpg">
+    <p>Need to Restart</p>
+</div>
+<div class="awentry">
+    <h3>Angel Beats ???</h3>
+    <img class="awpic" src="https://file.garden/ZrZSgsrYfQXsO7QH/watchlist/angelbeats.jpeg">
+    <p>Need to Restart</p>
 </div>
 `;
