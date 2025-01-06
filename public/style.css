@@ -157,7 +157,7 @@ footer a {
   padding: 1rem;
 }
 #nav a {
-  font-size: 1.15rem;
+  font-size: 1rem;
   line-height: 1.8rem;
 }
 #nav li {
@@ -192,7 +192,6 @@ footer a {
   display: none;
   text-align: start;
   position: relative;
-  width: 8rem;
   margin: 5px;
   margin-left: 15px;
 }
@@ -253,14 +252,9 @@ textarea {
   left: 5px;
   margin: 10px;
   width: 11rem;
-  position: absolute;
   bottom: 1px;
   text-decoration: none;
   visibility: hidden;
-}
-
-[data-title] {
-  position: relative;
 }
 
 /*Extras*/
@@ -398,10 +392,6 @@ marquee {
     text-align: center;
     justify-content: center;
     margin: 5px auto;
-  }
-  .btnbox {
-    margin: 0 auto;
-    width: 190px;
   }
   .pic {
     display: block;

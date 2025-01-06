@@ -9,17 +9,22 @@ text-align:center;
 padding: 0.2rem 0.5rem;
 border: 2px solid var(--text);
 width:18rem;
-margin: 5px 0px;}
+margin: 5px;}
 .awentry:hover{
     transition: all .2s ease-out;
     transform: scale(1.02); 
 }
 .awpic{
     padding-top: 0.1rem;
-    width: 100%
+    width: 100%;
 }
 .awentry p, .awentry h3{
 text-align:center;line-height:0.5rem}
+@media (max-width: 768px){
+.awentry{
+max-width:18rem;
+width:auto;}
+}
 </style>
 <div class="awentry">
     <h3>My Hero Academia &star;&star;&star;&star;</h3>
