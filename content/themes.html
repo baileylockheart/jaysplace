@@ -1,0 +1,85 @@
+---
+layout: template.njk
+title: Themes
+description: Reccomended Stylus themes!
+name: themes
+---
+<style>
+.themeentry{
+display:inline-block;
+background-color: var(--accent);
+color: var(--text);
+font-size:0.8rem;
+text-align:center;
+padding: 0.2rem 0.5rem;
+border: 2px solid var(--text);
+width:18rem;
+margin: 5px;}
+a.themeentry{
+    text-decoration: none;
+}
+.themeentry:hover{
+    transition: all .2s ease-out;
+    transform: scale(1.02); 
+    color:var(--text);
+}
+.themepic{
+    margin-top: 0.1rem;
+    width: 100%;
+    height: 9rem;
+    background-color: #1a1a1a;
+}
+.themeentry p, .themeentry h3{
+text-align:center;line-height:0.5rem}
+@media (max-width: 768px){
+.themeentry{
+max-width:18rem;
+height: auto;
+width:auto;}
+}
+</style>
+<div id="content">
+    <h1>Reccomended Stylus themes!</h1>
+    <h3>If you have the <a href="https://add0n.com/stylus.html" target="_blank">Stylus</a> extension installed (which if you don't, you totally should), these are some themes that I use and would reccomend!</h3>
+    <hr> 
+    <a class="themeentry" href="https://userstyles.world/style/10175/clean-youtube" target="_blank">
+        <h3>Clean YouTube</h3>
+        <img class="themepic" src="https://userstyles.world/preview/10175/5.webp">
+        <p>youtube.com</p>
+    </a>
+    <a class="themeentry" href="https://userstyles.world/style/1578/custom-color-twitter" target="_blank">
+        <h3>Custom Color Twitter</h3>
+        <img class="themepic" src="https://userstyles.world/preview/1578/0.webp">
+        <p>twitter.com</p>
+    </a>
+    <a class="themeentry" href="https://userstyles.world/style/11923/dracula-for-github" target="_blank">
+        <h3>Dracula for GitHub</h3>
+        <img class="themepic" src="https://userstyles.world/preview/11923/8.webp">
+        <p>github.com</p>
+    </a>
+    <a class="themeentry" href="https://userstyles.world/style/19357/firmament" target="_blank">
+        <h3>Firmament</h3>
+        <img class="themepic" src="https://userstyles.world/preview/19357/0.webp">
+        <p>bsky.app</p>
+    </a>
+    <a class="themeentry" href="https://userstyles.world/style/14326/infinite-toyhou-se" target="_blank">
+        <h3>Infinite Toyhou.se</h3>
+        <img class="themepic" src="https://userstyles.world/preview/14326/0.webp">
+        <p>toyhou.se</p>
+    </a>
+    <a class="themeentry" href="https://userstyles.world/style/13465/pink-and-black-tumblr-tweaked" target="_blank">
+        <h3>Pink and Black [Tumblr] [Tweaked]</h3>
+        <img class="themepic" src="https://userstyles.world/preview/13465/1.webp">
+        <p>tumblr.com</p>
+    </a>
+    <a class="themeentry" href="https://uso.kkx.one/style/126304" target="_blank">
+        <h3>VIMEO 2020 | Simple & Elegant Black</h3>
+        <img class="themepic" src="https://cdn.jsdelivr.net/gh/uso-archive/data@b609c835183b43b9bc3e9b79ff4b8271dba870b3/data/screenshots/126304-1.webp">
+        <p>vimeo.com</p>
+    </a>
+    <a class="themeentry" href="https://userstyles.world/style/13157/pink-and-purple-soundgasm" target="_blank">
+        <h3>Pink and Purple [Soundgasm]</h3>
+        <img class="themepic" src="https://userstyles.world/preview/13157/1.webp">
+        <p>soundgasm.net</p>
+    </a>
+</div>

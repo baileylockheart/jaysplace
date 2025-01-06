@@ -174,7 +174,7 @@ width:auto;}
 <div class="awentry">
     <h3>Tsurune &star;&star;&star;&star;</h3>
     <img class="awpic" src="https://file.garden/ZrZSgsrYfQXsO7QH/watchlist/tsurune.jpeg">
-    <p>Have to Restart</p>
+    <p>Need to Restart</p>
 </div>
 <div class="awentry">
     <h3>Carole and Tuesday &star;&star;&star;&star;</h3>
