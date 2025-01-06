@@ -169,6 +169,9 @@ p{
 p#tiny{
     font-size: 0.8rem;
 }
+b{
+    font-weight: 900;
+}
 a {
     color: whitesmoke;
     font-size: inherit;
@@ -211,6 +214,9 @@ textarea{
     bottom: 1px;
     text-decoration: none;
     visibility: hidden;
+}
+[data-title] {
+    position: relative;
 }
 /*Extras*/
 .scrollbox{
