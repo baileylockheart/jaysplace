@@ -147,11 +147,6 @@ width:auto;}
     <p>Need to Restart || S1 E5</p>
 </div>
 <div class="awentry">
-    <h3>Toradora &star;&star;&star;&star;</h3>
-    <img class="awpic" src="https://file.garden/ZrZSgsrYfQXsO7QH/watchlist/toradora.jpg">
-    <p>Need to Restart</p>
-</div>
-<div class="awentry">
     <h3>Fairy Tail &star;&star;&star;&star;</h3>
     <img class="awpic" src="https://file.garden/ZrZSgsrYfQXsO7QH/watchlist/fairytail.jpeg">
     <p>Need to Restart || S2 E?</p>
@@ -167,6 +162,16 @@ width:auto;}
     <p>Need to Restart || S2 E2</p>
 </div>
 <div class="awentry">
+    <h3>Black Clover ???</h3>
+    <img class="awpic" src="https://file.garden/ZrZSgsrYfQXsO7QH/watchlist/blackclover.jpeg">
+    <p>Need to Restart || S1 E2</p>
+</div>
+<div class="awentry">
+    <h3>Toradora &star;&star;&star;&star;</h3>
+    <img class="awpic" src="https://file.garden/ZrZSgsrYfQXsO7QH/watchlist/toradora.jpg">
+    <p>Need to Restart</p>
+</div>
+<div class="awentry">
     <h3>Hunter × Hunter &star;&star;&star;&star;</h3>
     <img class="awpic" src="https://file.garden/ZrZSgsrYfQXsO7QH/watchlist/hxh.jpeg">
     <p>Need to Restart</p>
@@ -180,11 +185,6 @@ width:auto;}
     <h3>Carole and Tuesday &star;&star;&star;&star;</h3>
     <img class="awpic" src="https://file.garden/ZrZSgsrYfQXsO7QH/watchlist/carolentuesday.jpg">
     <p>Need to Restart</p>
-</div>
-<div class="awentry">
-    <h3>Black Clover ???</h3>
-    <img class="awpic" src="https://file.garden/ZrZSgsrYfQXsO7QH/watchlist/blackclover.jpeg">
-    <p>Need to Restart || S1 E2</p>
 </div>
 <div class="awentry">
     <h3>Kakegurui ???</h3>
