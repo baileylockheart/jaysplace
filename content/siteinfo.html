@@ -9,12 +9,34 @@ name: siteinfo
         width: 145px;
         height:100px
     }
+    .site{
+        display:inline-block;
+        background-color: var(--accent);
+        color: var(--text);
+        padding: 0.1rem 0.5rem;
+        border: 2px solid var(--text);
+        width:90%;
+        margin: 2px;
+    }
+    .site p{line-height: 0.25;}
+    .sitepic{
+        padding-top: 0.1rem;
+        width: 100%
+    }
+    a.site{
+        text-decoration: none;
+    }
+    a.site:hover{
+        color: var(--text);
+        transition: all .2s ease-out;
+        transform: scale(1.02); 
+    }
 </style>
 <div id="content">
     <h1>Site Info and Credits!</h1>
     <h3>Stuff to know about this site!</h3>
     <hr>
-    <p>This site was initially started in April of 2023, as my first ever coding project! However, the site is now on its SECOND version, which I began work on in January of 2025! If you'd like to see the previous version, check the <a href="/archive.html">archive</a>. All information about the site listed here is in reference to the current version!</p>
+    <p>This site was initially started in April of 2023, as my first ever coding project! However, the site is now on its SECOND version, which I began work on in January of 2025! If you'd like to see the previous version, check the <a href="#archive">archive</a>. All information about the site listed here is in reference to the current version!</p>
     <p>This site was made using a Static Site Generator called Eleventy! Because it allows me to make my own templates to reuse, it made everything a lot quicker/easier WITHOUT sacrificing the freedom to do what I want with it! I really like it and would highly reccomend :3</p>
     <p>This site is being built on desktop and is intended to be mobile-compatible, but it's still a bit funky looking on tablets. Also, there is no autoplay music or video on this site!</p>
 </div>
@@ -38,5 +60,17 @@ name: siteinfo
         <a href="https://status.cafe" target="_blank"><img src="/archive/images/buttons/statuscafe.png" alt="Status Cafe"/></a>
         <br><br>
         <a href="https://rvklein.neocities.org/" target="_blank">rvklein.neocities.org</a>
+    </div>
+</div>
+<div id="content2">
+    <h2 id="archive">Archive!!</h2>
+    <p>This is the old version of the site!</p>
+    <hr>
+    <div class="center">
+        <a class="site"  href="/archive/index.html" target="_blank">
+        <h3>Version 1.0</h3>
+        <img class="sitepic" src="/images/v1.png">
+        <img src="/archive/images/jaysplace.png" width="88" height="31">
+        </a>
     </div>
 </div>
