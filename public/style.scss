@@ -67,6 +67,11 @@ body, html {
     display: flex;
     width: 100%;
 }
+#wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 #pfp{
     margin: 0px 1rem 0px 0px;
 }
