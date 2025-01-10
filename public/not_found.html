@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Jay's Place || {{ title }}</title>
+    <title>Jay's Place || 404</title>
 
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
@@ -11,20 +11,20 @@
     <!--meta tags-->
     <meta name="description" content="{{ description }}"/>
     <meta property="og:site_name" content="Neocities"/>
-    <meta property="og:title" content="Jay's Place || {{ title }}"/>
+    <meta property="og:title" content="Jay's Place || 404"/>
     <meta property="og:type" content="website" />
     <meta property="og:description" content="{{ description }}"/>
     <meta property="og:image" content="https://file.garden/ZrZSgsrYfQXsO7QH/jaysplacebtn.png"/>
     <meta property="og:image:height" content="800"/>
-    <meta property="og:url" content="https://jaysplace.neocities.org/{{ name }}"/>
+    <meta property="og:url" content="https://jaysplace.neocities.org/not_found"/>
     
     <!--and the bird app bc they just have to be special-->
-    <meta name="twitter:title" content="Jay's Place || {{ title }}" />
+    <meta name="twitter:title" content="Jay's Place || 404" />
     <meta name="twitter:image" content="https://file.garden/ZrZSgsrYfQXsO7QH/jaysplacebtn.png">
     <meta name="twitter:description" content="{{ description }}">
     <meta property="twitter:card" content="summary_large_image"/>
     
-    <link rel="canonical" href="https://jaysplace.neocities.org/{{ name }}"/>
+    <link rel="canonical" href="https://jaysplace.neocities.org/not_found"/>
     <link rel="icon" type="image/x-icon" href="/images/logo.png">
     <link rel="stylesheet" type="text/css" href="/styles/style.css">
 
@@ -32,11 +32,14 @@
 </head>
 <body>
     <div id="container">
-        <header><a href="/index.html">Jay's Place &#127744;</a></header>
-        <div id="main">
-        <div id="nav">{% include 'nav.njk' %}</div>  
-        <main>     
-        {{ content | safe }}
+        <header><a href="/index.html">404 &#127744;</a></header>
+        <div id="main"> 
+        <main>
+            <div id="content">
+                <h2>Hey, what are you doing here?</h2>
+                <p>I think you got lost, cause there's nothing here. Whatever you were looking for is either missing, or under construction!</p>
+                <a href="/index.html" style="text-decoration: none;"><button style="background-color: var(--altbg);">Click here to go home!</button></a>
+            </div>
         </main> 
         </div>
         <footer>jay's place &copy; 2025</footer>

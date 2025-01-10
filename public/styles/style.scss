@@ -1,6 +1,6 @@
 @font-face {
     font-family: Binchotan;
-    src: url(fonts/Binchotan.ttf);
+    src: url("/fonts/Binchotan.ttf");
   }
 $bg:#21282e;
 $lightbg:#0f4a70;
@@ -39,7 +39,7 @@ body:before{
     top:0;
     transform: scale(1);
     z-index: -700;
-    background-image: url(images/orange-swirl-background-free-png.png);
+    background-image: url("/images/orange-swirl-background-free-png.png");
     background-size: cover;
     filter: brightness(35%);
     background-position: center, 0% 0%;
@@ -55,6 +55,12 @@ body{
 body, html {
     scrollbar-width: auto;
     scrollbar-color: $altbg $borders;
+}
+img {
+    image-rendering: auto;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+    image-rendering: -webkit-optimize-contrast;
 }
 #container{
     display: block;
@@ -181,6 +187,9 @@ a {
     color: whitesmoke;
     font-size: inherit;
     text-decoration:underline;
+    button{
+        text-decoration: none;
+    }
 }  
 a:hover {
     color: $altlight;
@@ -195,6 +204,31 @@ textarea{
     padding:2px;
     height:2rem
 }
+/*Buttons*/
+button {
+    background-color: $accent;
+    color:$text;
+    cursor: pointer;
+    width: auto;
+    transition: 0.3s;
+    font-family: $font;
+    border:none;
+    border-radius:15px;
+    font-size:1rem;
+    line-height:1;
+    padding: 11px;
+    margin: 5px;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0px 0px 2px $borders;
+    cursor: pointer;
+    display: table-cell;
+    vertical-align: middle;
+  }
+button:hover {
+    transition: all .2s ease-out;
+    transform: scale(1.02);
+  }
 /*Custom Titles*/
 [data-title]:hover:after {
     opacity: 1;
@@ -281,7 +315,7 @@ marquee{
     left: 0;
     top: 0;
     background: $bg
-      url("images/oval.svg")
+      url("/images/oval.svg")
       no-repeat center;
     z-index: 9999;
 }

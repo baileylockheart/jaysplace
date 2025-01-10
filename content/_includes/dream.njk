@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Jay's Place || {{ title }}</title>
+    <title>Jay's Dream Space || {{ title }}</title>
 
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
@@ -16,30 +16,30 @@
     <meta property="og:description" content="{{ description }}"/>
     <meta property="og:image" content="https://file.garden/ZrZSgsrYfQXsO7QH/jaysplacebtn.png"/>
     <meta property="og:image:height" content="800"/>
-    <meta property="og:url" content="https://jaysplace.neocities.org/{{ name }}"/>
+    <meta property="og:url" content="https://jaysplace.neocities.org/dreamspace/{{ name }}"/>
     
     <!--and the bird app bc they just have to be special-->
-    <meta name="twitter:title" content="Jay's Place || {{ title }}" />
+    <meta name="twitter:title" content="Jay's Dream Space || {{ title }}" />
     <meta name="twitter:image" content="https://file.garden/ZrZSgsrYfQXsO7QH/jaysplacebtn.png">
     <meta name="twitter:description" content="{{ description }}">
     <meta property="twitter:card" content="summary_large_image"/>
     
-    <link rel="canonical" href="https://jaysplace.neocities.org/{{ name }}"/>
-    <link rel="icon" type="image/x-icon" href="/images/logo.png">
-    <link rel="stylesheet" type="text/css" href="/styles/style.css">
+    <link rel="canonical" href="https://jaysplace.neocities.org/dreamspace/{{ name }}"/>
+    <link rel="icon" type="image/x-icon" href="/images/dreamspace/logo.png">
+    <link rel="stylesheet" type="text/css" href="/styles/dreamstyle.css">
 
     <div id="preloader"></div>
 </head>
 <body>
     <div id="container">
-        <header><a href="/index.html">Jay's Place &#127744;</a></header>
+        <header><a href="/dreamspace/index.html">Jay's Dream Space &#128173;</a></header>
         <div id="main">
-        <div id="nav">{% include 'nav.njk' %}</div>  
+        <div id="nav">{% include 'dreamnav.njk' %}</div>  
         <main>     
         {{ content | safe }}
         </main> 
         </div>
-        <footer>jay's place &copy; 2025</footer>
+        <footer>jay's dream space &copy; 2025</footer>
     </div>
     <script>
         var loader = document.getElementById("preloader");
