@@ -257,6 +257,12 @@ button:hover {
 [data-title] {
     position: relative;
 }
+.title{
+    background-color: $altbg;
+    border: solid 2px $borders;
+    max-width: fit-content;
+    padding:5px 10px;
+}
 /*Extras*/
 .scrollbox{
     width:18rem;

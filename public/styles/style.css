@@ -51,6 +51,13 @@ body, html {
   scrollbar-color: #0065a8 #b3a5c0;
 }
 
+img {
+  image-rendering: auto;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+  image-rendering: -webkit-optimize-contrast;
+}
+
 #container {
   display: block;
   max-width: 80%;
@@ -224,6 +231,9 @@ a {
   font-size: inherit;
   text-decoration: underline;
 }
+a button {
+  text-decoration: none;
+}
 
 a:hover {
   color: #ffa068;
@@ -298,6 +308,14 @@ button:hover {
   position: relative;
 }
 
+.title {
+  background-color: #0065a8;
+  border: solid 2px #b3a5c0;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  padding: 5px 10px;
+}
+
 /*Extras*/
 .scrollbox {
   width: 18rem;
@@ -322,7 +340,7 @@ button:hover {
 }
 
 .pic {
-  max-width: 240px;
+  max-width: 200px;
   margin: 0px 2px;
 }
 
