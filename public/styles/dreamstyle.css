@@ -5,7 +5,7 @@
 }
 .theme-dreamspace {
   --bg:#95C4E7;
-  --darkbg:#6282be;
+  --darkbg:#809bcd;
   --altbg:#ccdeff;
   --accent:#f9e8b1;
   --light:#ffc654;
@@ -31,7 +31,7 @@
 
 .theme-main {
   --bg:#21282e;
-  --lightbg:#0f4a70;
+  --darkbg:#0f4a70;
   --altbg:#0065a8;
   --accent:#cd6529;
   --light:#54bbff;
@@ -44,7 +44,8 @@
   font-size: 18px;
 }
 .theme-main body:before {
-  background-image: url("/images/bg.png");
+  background-image: url("/images/orange-swirl-background-free-png.png");
+  filter: brightness(35%);
 }
 .theme-main body {
   background-color: var(--bg);
@@ -372,7 +373,7 @@ button:hover {
 }
 
 hr {
-  background-color: var(--borders);
+  background-color: var(--text);
   border: none;
   border-radius: 5px;
   height: 2px;
