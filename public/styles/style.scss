@@ -263,6 +263,28 @@ button:hover {
     max-width: fit-content;
     padding:5px 10px;
 }
+/*Charts*/
+table, th, td {
+    text-align:start;
+    border: 1px solid $text;
+    padding:0.5rem;
+    border-collapse: collapse;
+}
+table{
+    margin-top: 15px;
+    width:95%;
+}
+.symbol{
+    text-align: center;
+}
+th{
+    background-color: $altbg;
+}
+#center{
+    display:table;
+    margin-left:auto;
+    margin-right:auto;
+}
 /*Extras*/
 .scrollbox{
     width:18rem;
